@@ -1,6 +1,6 @@
 # Copyright (C) 2006 International Business Machines and others.
 # All Rights Reserved.
-# This file is distributed under the Common Public License.
+# This file is distributed under the Eclipse Public License.
 
 ## $Id$
 
@@ -16,10 +16,13 @@ EXTRA_DIST = $(EXAMPLE_FILES) README AUTHORS LICENSE
 
 DISTCLEANFILES = $(EXAMPLE_CLEAN_FILES)
 
-datacoindir = $(prefix)/share/coin/Data/Infeas
+datacoindir = $(datadir)/coin/Data/Infeas
 datacoin_DATA = $(EXAMPLE_FILES)
 
-coindocdir = $(prefix)/share/doc/coin/Data/Infeas
+coindocdir = $(datadir)/coin/doc/Data/Infeas
 coindoc_DATA = README AUTHORS LICENSE
+
+pkgconfiglibdir = $(libdir)/pkgconfig
+pkgconfiglib_DATA = coindatainfeas.pc
 
 include BuildTools/Makemain.inc

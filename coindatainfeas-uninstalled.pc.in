@@ -1,0 +1,8 @@
+datadir=@ABSBUILDDIR@
+
+Name: Infeas
+Description: Infeasible models
+URL: https://projects.coin-or.org/svn/Data/Infeas
+Version: @PACKAGE_VERSION@
+Libs:
+Cflags:
